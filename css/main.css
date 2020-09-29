@@ -40,3 +40,7 @@ p, li {
 p, ul {
   margin-bottom: 30px;
 }
+
+html.wf-loading * {
+  opacity: 0;
+}
