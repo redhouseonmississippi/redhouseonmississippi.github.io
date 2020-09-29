@@ -19,3 +19,7 @@ p, li {
   font-size: 120%;
   font-family: 'Roboto', sans-serif;
 }
+
+html.wf-loading * {
+     opacity: 0;
+ }
