@@ -35,18 +35,22 @@ h4.story-link {
 
 img {
   margin: 20px 0;
+
+  &.stop-foreclosure {
+    margin: 0;
+  }
 }
 
 .header img {
   margin: 20px 0 0 0;
 
   &.text {
-    height: 80px;
+    height: 100px;
     float: left
   }
 
   &.logo {
-    height: 80px;
+    height: 100px;
     float: right
   }
 }
