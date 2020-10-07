@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto&display=swap">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Red House on Mississippi">
+    <meta name="twitter:description" content="An Afro-indigenous family’s fight against systematic displacement in Portland, OR">
+    <meta name="twitter:image" content="https://redhouseonmississippi.com/images/redhouse-wide.jpg">
+
+    <!-- FB / Open Graph -->
+    <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}" />
+    <meta property="og:title" content="Red House on Mississippi" />
+    <meta property="og:url" content="https://redhouseonmississippi.com/{{ page.url }}" />
+    <meta property="og:image" content="https://redhouseonmississippi.com/images/redhouse-wide.jpg" />
+    <meta property="og:description" content="An Afro-indigenous family’s fight against systematic displacement in Portland, OR" />
+    <meta property="og:site_name" content="Red House on Mississippi" />
+
+    <title>Red House on Mississippi</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="/">RED HOUSE ON MISSISSIPPI</a></h1>
+      <img class="img-responsive" src="/images/redhouse-wide.jpg" alt="The Kinney Family standing in front of their house, the sun is shining, a large sign hanging on the house says 'STOP THE FORECLOSURE'">
+      
+      {{ content }}
+      
+      <hr/>
+      
+      <p class='footer'>STOP THE FORECLOSURE, TREASON, AND PLOT</p>
+    </div>
+  </body>
+</html>
