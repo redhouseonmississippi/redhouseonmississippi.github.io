@@ -36,24 +36,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h1 class="header"><a href="/">RED HOUSE ON <br/>MISSISSIPPI</a></h1>
-        </div>
-        <div class="col-sm-6">
-          <img class='img-responsive' src="/images/stop-the-foreclosure-header.jpg" alt="STOP THE FORECLOSURE, TREASON, AND PLOT">
+      <div class='row header'>
+        <div class="col-sm-12">
+          <a href="/">
+            <img class='img-responsive' style="height: 80px; float: left" src="/images/red-house-header-text.jpg" alt="The words 'Red House on Mississippi' in big, bold, red and black text">
+            <img class='img-responsive hide-on-mobile' style="height: 80px; float: right" src="/images/redhouse-logo-only.jpg" alt="The words 'Red House on Mississippi' in big, bold, red and black text">
+          </a>
         </div>
       </div>
-
-      {% if page.permalink != 'calendar' %}
-        <img class="img-responsive" src="/images/redhouse-wide.jpg" alt="The Kinney Family standing in front of their house, the sun is shining, a large sign hanging on the house says 'STOP THE FORECLOSURE'">
-      {% endif %}
-
+      
       {{ content }}
-
-      <hr/>
-
-      <img class='img-responsive' src="/images/stop-the-foreclosure.jpg" alt="STOP THE FORECLOSURE, TREASON, AND PLOT">
     </div>
   </body>
 </html>
