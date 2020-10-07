@@ -39,6 +39,16 @@ img {
 
 .header img {
   margin: 20px 0 0 0;
+
+  &.text {
+    height: 80px;
+    float: left
+  }
+
+  &.logo {
+    height: 80px;
+    float: right
+  }
 }
 
 p, li {
