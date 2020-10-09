@@ -40,14 +40,24 @@
   <body>
     <div class="container">
       <div class='row header'>
-        <div class="col-sm-12">
+        <div class="col-sm-4">
           <a href="/">
             <img class='img-responsive text' src="/images/redhouse-header-text.png" alt="The words 'Red House on Mississippi' in big, bold, red and black text">
-            <img class='img-responsive hide-on-mobile logo' src="/images/redhouse-logo-only.jpg" alt="The words 'Red House on Mississippi' in big, bold, red and black text">
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <ul class="list-inline">
+            <li><a {% if page.permalink == "story" %}class="selected" {% endif %}href="/story">STORY</a></li>
+            <li><a {% if page.permalink == "calendar" %}class="selected" {% endif %}href="/calendar">CALENDAR</a></li>
+          </ul>
+        </div>
+        <div class="logo col-sm-2">
+          <a href="/">
+            <img class='hide-on-mobile' src="/images/redhouse-logo-only.jpg" alt="Black and white outline drawing of the Red House, with front porch, stairs, and a big tree on the right">
           </a>
         </div>
       </div>
-      
+
       {{ content }}
     </div>
   </body>
