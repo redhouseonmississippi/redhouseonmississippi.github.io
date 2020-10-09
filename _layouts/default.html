@@ -47,8 +47,8 @@
         </div>
         <div class="col-sm-6">
           <ul class="list-inline">
-            <li><a {% if page.permalink == "story" %}class="selected" {% endif %}href="/story">STORY</a></li>
-            <li><a {% if page.permalink == "calendar" %}class="selected" {% endif %}href="/calendar">CALENDAR</a></li>
+            <li><a {% if page.permalink == "story" %}class="selected" {% endif %} href="/story">STORY</a></li>
+            <li><a {% if page.permalink == "calendar" %}class="selected" {% endif %} href="/calendar">CALENDAR</a></li>
           </ul>
         </div>
         <div class="logo col-sm-2">
@@ -59,6 +59,18 @@
       </div>
 
       {{ content }}
+
+      <hr />
+
+      <div class="footer">
+        <ul class="list-inline">
+          <li><a href="/"><img src="/images/redhouse-logo-only.jpg" alt="Black and white outline drawing of the Red House, with front porch, stairs, and a big tree on the right"></a></li>
+          <li><a {% if page.permalink == "/" %}class="selected" {% endif %} href="/">home</a></li>
+          <li><a {% if page.permalink == "story" %}class="selected" {% endif %} href="/story">story</a></li>
+          <li><a {% if page.permalink == "calendar" %}class="selected" {% endif %} href="/calendar">calendar</a></li>
+        </ul>
+        <p class="text-center">STOP THE FORECLOSURE, TREASON, AND PLOT</p>
+      </div>
     </div>
   </body>
 </html>

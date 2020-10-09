@@ -128,6 +128,31 @@ html.wf-loading * {
   }
 }
 
+.footer {
+  text-align: center;
+
+  img {
+    width: 50px;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  li + li {
+    margin-left: 10px;
+  }
+
+  a, a:hover, p {
+    color: #999;
+    font-size: 80%;
+  }
+
+  a.selected {
+    text-decoration: underline;
+  }
+}
+
 #calendar {
   margin-top: 20px;
 }
