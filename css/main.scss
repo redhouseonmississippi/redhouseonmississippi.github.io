@@ -103,7 +103,7 @@ html.wf-loading * {
       font-size: 140%;
 
       + li {
-        margin-left: 40px;
+        margin-left: 5px;
       }
     }
 
@@ -157,6 +157,28 @@ html.wf-loading * {
   margin-top: 20px;
 }
 
+#press {
+  text-align: center;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  small {
+    font-size: 80%;
+    color: #999;
+  }
+
+  img {
+    margin: 0 0 5px 0;
+    border: 2px dashed #ccc;
+  }
+}
+
 // STUFF JUST FOR TABLET / DESKTOP
 @media (min-width: 768px) {
   .hide-on-desktop { display: none }
@@ -167,14 +189,14 @@ html.wf-loading * {
       padding: 5px 0;
       background-color: white;
       margin: 40px 0 0 0;
-      text-align: center;
+      text-align: left;
 
       li {
         font-size: 200%;
         font-family: 'Fugaz One', cursive;
 
         + li {
-          margin-left: 60px;
+          margin-left: 20px;
         }
       }
 
