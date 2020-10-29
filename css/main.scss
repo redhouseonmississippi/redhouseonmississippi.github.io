@@ -1,19 +1,15 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-$red: #681310;
 
-body {
-  margin-bottom: 20px;
-}
+$red: #681310;
 
 h1, h2, h3, h4 {
   font-family: 'Fugaz One', cursive;
 }
 
-h1 a, h1 a:hover {
-  color: inherit;
-  text-decoration: none;
+h1 {
+  margin-top: 5px;
 }
 
 h4 {
@@ -65,7 +61,6 @@ a, a:hover {
   color: #18989c;
 }
 
-
 html.wf-loading * {
   opacity: 0;
 }
@@ -88,23 +83,27 @@ html.wf-loading * {
 }
 
 .header {
+  padding-bottom: 20px;
+
   img {
     margin: 20px 0 0 0;
-    width: 280px;
+    width: 350px;
   }
 
   ul {
     border: 3px solid $red;
     padding: 10px 0;
     margin: -10px 0 0 0;
-    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
 
     li {
       font-size: 140%;
-
-      + li {
-        margin-left: 5px;
-      }
+      padding: 0 20px;
     }
 
     a, a:hover {
@@ -129,7 +128,9 @@ html.wf-loading * {
 }
 
 .footer {
+  border-top: 1px solid #ddd;
   text-align: center;
+  margin-top: 30px;
 
   img {
     width: 50px;
@@ -137,10 +138,6 @@ html.wf-loading * {
 
   ul {
     margin-bottom: 0;
-  }
-
-  li + li {
-    margin-left: 10px;
   }
 
   a, a:hover, p {
@@ -155,6 +152,48 @@ html.wf-loading * {
 
 #calendar {
   margin-top: 20px;
+}
+
+#donate {
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  .links, span.red-house-eatz {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 130%;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  small {
+    margin-top: -20px;
+    display: block;
+    text-align: center;
+    color: #ccc;
+  }
+
+  a.gofundme { color: #159D4A }
+  a.cash-app { color: #1BD13B }
+  a.venmo { color: #0D74FE }
+
+  .col + .col {
+    margin-top: 60px;
+  }
 }
 
 #press {
@@ -184,32 +223,22 @@ html.wf-loading * {
   .hide-on-desktop { display: none }
 
   .header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+
     ul {
       border: 0;
       padding: 5px 0;
-      background-color: white;
-      margin: 40px 0 0 0;
-      text-align: left;
+      margin: 30px 0 0 0;
 
       li {
         font-size: 200%;
-        font-family: 'Fugaz One', cursive;
-
-        + li {
-          margin-left: 20px;
-        }
-      }
-
-      a, a:hover {
-        color: $red;
-        font-weight: bold;
-      }
-
-      a.selected, a:hover {
-        text-decoration: none;
-        border-bottom: 5px solid $red;
       }
     }
+  }
+
+  #donate .col + .col {
+    margin-top: 0;
   }
 }
 

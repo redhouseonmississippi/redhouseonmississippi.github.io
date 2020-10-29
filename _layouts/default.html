@@ -40,35 +40,29 @@
   <body>
     <div class="container">
       <div class='row header'>
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-md-4">
           <a href="/">
-            <img class='img-responsive text' src="/images/redhouse-header-text.png" alt="The words 'Red House on Mississippi' in big, bold, red and black text">
+            <img class='img-responsive text' src="/images/header.png" alt="The words 'Red House on Mississippi' in big, bold, red and black text with line-drawing of the Red House next to it">
           </a>
         </div>
-        <div class="col-sm-6">
-          <ul class="list-inline">
+        <div class="col-sm-6 col-md-8">
+          <ul>
             <li><a {% if page.permalink == "story" %}class="selected" {% endif %} href="/story">STORY</a></li>
             <li><a {% if page.permalink == "calendar" %}class="selected" {% endif %} href="/calendar">CALENDAR</a></li>
+            <li><a {% if page.permalink == "donate" %}class="selected" {% endif %} href="/donate">DONATE</a></li>
             <li><a {% if page.permalink == "press" %}class="selected" {% endif %} href="/press">PRESS</a></li>
           </ul>
-        </div>
-        <div class="logo col-sm-2">
-          <a href="/">
-            <img class='hide-on-mobile' src="/images/redhouse-logo-only.jpg" alt="Black and white outline drawing of the Red House, with front porch, stairs, and a big tree on the right">
-          </a>
         </div>
       </div>
 
       {{ content }}
 
-      <hr />
-
-      <div class="footer">
+      <div class="row footer">
         <ul class="list-inline">
           <li><a href="/"><img src="/images/redhouse-logo-only.jpg" alt="Black and white outline drawing of the Red House, with front porch, stairs, and a big tree on the right"></a></li>
-          <li><a {% if page.permalink == "/" %}class="selected" {% endif %} href="/">home</a></li>
           <li><a {% if page.permalink == "story" %}class="selected" {% endif %} href="/story">story</a></li>
           <li><a {% if page.permalink == "calendar" %}class="selected" {% endif %} href="/calendar">calendar</a></li>
+          <li><a {% if page.permalink == "donate" %}class="selected" {% endif %} href="/donate">donate</a></li>
           <li><a {% if page.permalink == "press" %}class="selected" {% endif %} href="/press">press</a></li>
         </ul>
         <p class="text-center">STOP THE FORECLOSURE, TREASON, AND PLOT</p>
