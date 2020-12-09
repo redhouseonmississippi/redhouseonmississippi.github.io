@@ -65,6 +65,18 @@ html.wf-loading * {
   opacity: 0;
 }
 
+.alert {
+  margin-top: 20px;
+  background: #681310;
+  color: #fff;
+
+  p {
+    text-align: center;
+    font-size: 165%;
+    font-weight: bold;
+  }
+}
+
 // for embeding youtube videos and google calendars
 .iframe-container {
   position: relative;
