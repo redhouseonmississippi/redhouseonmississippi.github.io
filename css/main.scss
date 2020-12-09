@@ -67,7 +67,7 @@ html.wf-loading * {
 
 .alert {
   margin-top: 20px;
-  background: #681310;
+  background: $red;
   color: #fff;
 
   p {
@@ -76,6 +76,39 @@ html.wf-loading * {
     font-weight: bold;
   }
 }
+
+h2.in-the-news {
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 40px;
+}
+
+.press-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: start;
+  align-items: top;
+}
+
+.press-flex-item {
+  padding: 0;
+  margin: 0 10px 10px 10px;
+  width: 275px;
+
+  p {
+    font-size: 140%;
+    font-weight: bold;
+  }
+
+  small {
+    display: block;
+    font-weight: normal;
+    color: $red;
+  }
+}
+
 
 // for embeding youtube videos and google calendars
 .iframe-container {
