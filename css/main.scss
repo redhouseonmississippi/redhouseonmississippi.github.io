@@ -68,13 +68,19 @@ html.wf-loading * {
 
 .alert {
   margin-top: 20px;
-  background: $red;
-  color: #fff;
+  border: 2px solid $red;
+  padding: 0 0 15px 0;
+
+  p.header {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background: $red;
+    color: #fff;
+  }
 
   p {
     text-align: center;
-    font-size: 165%;
-    font-weight: bold;
+    font-size: 155%;
   }
 }
 
