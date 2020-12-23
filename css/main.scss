@@ -90,7 +90,7 @@ h2.in-the-news {
   margin-bottom: 40px;
 }
 
-.press-flex-container {
+.press-links {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -99,7 +99,7 @@ h2.in-the-news {
   align-items: top;
 }
 
-.press-flex-item {
+.press-link {
   padding: 0;
   margin: 0 10px 10px 10px;
   width: 275px;
@@ -115,7 +115,6 @@ h2.in-the-news {
     color: $red;
   }
 }
-
 
 // for embeding youtube videos and google calendars
 .iframe-container {
@@ -252,22 +251,50 @@ h2.in-the-news {
   text-align: center;
 
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
-  .release {
-    margin-bottom: 50px;
+  p.helper {
+    color: #999;
+  }
+
+  .press-conferences,
+  .press-releases {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: start;
+    align-items: top;
+  }
+
+  .press-conferences {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+  }
+
+  .press-release {
+    padding: 0;
+    margin-bottom: 30px;
+    width: 300px;
 
     p { margin-bottom: 10px }
-
-    small {
-      font-size: 80%;
-      color: #999;
-    }
 
     img {
       margin: 0 0 20px 0;
       border: 2px dashed #ccc;
+    }
+  }
+
+  .press-conference {
+    padding: 0;
+    margin-bottom: 30px;
+    width: 400px;
+
+    p { margin-bottom: 10px }
+
+    img {
+      margin: 0 0 20px 0;
     }
   }
 }

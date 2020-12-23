@@ -3,3 +3,8 @@ description: >-
   An Afro-indigenous family’s fight against systematic displacement in Portland, OR
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://redhouseonmississippi"
+
+collections:
+  press_conferences:
+    output: true
+    permalink: /press-conferences/:title

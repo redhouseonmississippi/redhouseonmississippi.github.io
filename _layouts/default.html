@@ -26,7 +26,7 @@
     <!-- FB / Open Graph -->
     <meta property="og:type" content="{% if page.permalink == '/' %}website{% else %}article{% endif %}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }} / {% endif %}Red House on Mississippi" />
-    <meta property="og:url" content="https://redhouseonmississippi.com/{{ page.permalink }}" />
+    <meta property="og:url" content="https://redhouseonmississippi.com{{ page.url }}" />
     <meta property="og:image" content="https://redhouseonmississippi.com/images/redhouse-wide.jpg" />
     <meta property="og:description" content="An Afro-indigenous family’s fight against systematic displacement in Portland, OR" />
     <meta property="og:site_name" content="Red House on Mississippi" />
@@ -54,7 +54,7 @@
   </head>
   <body>
     <div class="container">
-      <div class='alert'>
+      <!-- <div class='alert'>
         <p class='header'><b>PRESS CONFERENCE</b></p>
         <p>December 18th at 5pm PST</p>
         <p>
@@ -62,7 +62,7 @@
             Click here for Zoom link
           </a>
         </p>
-      </div>
+      </div> -->
       <div class='row header'>
         <div class="col-sm-6 col-md-4">
           <a href="/">
