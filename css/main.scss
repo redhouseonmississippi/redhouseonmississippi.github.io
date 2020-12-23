@@ -299,6 +299,12 @@ h2.in-the-news {
   }
 }
 
+#press-conference {
+  h2 {
+    margin: 0 0 5px 0;
+  }
+}
+
 // STUFF JUST FOR TABLET / DESKTOP
 @media (min-width: 768px) {
   .hide-on-desktop { display: none }
