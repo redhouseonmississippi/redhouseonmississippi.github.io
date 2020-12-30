@@ -10,7 +10,7 @@ title: Press
       <h1>PRESS CONFERENCES</h1>
       <p class='helper'>Click thumbnail for video and transcript</p>
       <div class='press-conferences'>
-        {% for press_conference in site.press_conferences %}
+        {% for press_conference in site.press_conferences reversed %}
           <div class='press-conference'>
             <p><strong>{{ press_conference.date | date: '%B %-d, %Y' }}</strong><br/></p>
             <a href="{{ press_conference.url }}">
