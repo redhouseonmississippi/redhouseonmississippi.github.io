@@ -7,22 +7,15 @@ title: Press
 <div id="press">
   <div class="row">
     <div class="col-sm-12">
-      <h1>PRESS CONFERENCES</h1>
-      <p class='helper'>Click thumbnail for video and transcript</p>
-      <div class='press-conferences'>
-        {% for press_conference in site.press_conferences reversed %}
-          <div class='press-conference'>
-            <p><strong>{{ press_conference.date | date: '%B %-d, %Y' }}</strong><br/></p>
-            <a href="{{ press_conference.url }}">
-              <img src="/images/press-conferences/{{ press_conference.date | date: '%Y-%m-%d' }}.png" class='img-responsive'>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-
       <h1>PRESS RELEASES</h1>
       <p class='helper'>Click thumbnail for full PDF</p>
       <div class='press-releases'>
+        <div class='press-release'>
+          <p><strong>May 10th, 2021</strong><br/></p>
+          <a href="/press-releases/2021-05-10.pdf" target="_blank">
+            <img src="/images/press-releases/2021-05-10.png" class='img-responsive' alt="Graphic with Red House on Mississippi logo at top with text that reads: 9am Monday, May 10th, 2021 - Contact: redhouseonmississippi@gmail.com - A Small Victory in a Long Grassroots Campaign: Kinney Family Files Appeal Bond As Negotiation Process Begins. [Portland, Oregon] It’s been five months since Multnomah County Sheriffs and Portland Police Bureau raided the Afro-Indigenous Kinney family home and unlawfully arrested land defenders. And it’s been eight months since Kinney family elders were violently evicted during the summer 2020 wildfires. Over the winter and spring, the family continues to recover from the trauma of these raids and strengthen their legal defense — while still receiving death threats by white supremacists and slander from media outlets.">
+          </a>
+        </div>
         <div class='press-release'>
           <p><strong>December 14th, 2020</strong><br/></p>
           <a href="/press-releases/2020-12-14.pdf" target="_blank">
@@ -59,6 +52,19 @@ title: Press
             <img src="/images/press-releases/2020-10-20.png" class='img-responsive'  alt="Graphic with text that reads: Friends of the N. Mississippi Ave. Kinney Family. NEWS RELEASE. For immediate release. Contact: William Nitche 503-539-3784 (cell), email: w.nietzche1@gmail.com, Local Family Seeks to Get Their Home Back, Multi-year fraud and deceit nightmare culminates in recent eviction at gunpoint, Portland, Ore. – On the morning of September 9, County Sheriff Patrol arrived with assault rifles to a historic , home on North Mississippi Avenue. They proceeded to forcibly evict the elderly William Kinney, Jr., his wife, , Julie Metcalf, and their two adult sons from their long-time family home. They even handcuffed and detained , the two sons in the patrol vehicle while removing the parents from their home., We are saddened to hear of families losing their homes to foreclosure, but assume they just didn’t pay their , mortgage. However, the Kinneys only had a relatively small second mortgage and it was not in default. Further, , the Kinneys made repeated efforts to clarify the situation and fight the intended foreclosure through the lenders , and the courts, but the judges of two courts still allowed the fraudulent foreclosure to proceed.">
           </a>
         </div>
+      </div>
+
+      <h1>PRESS CONFERENCES</h1>
+      <p class='helper'>Click thumbnail for video and transcript</p>
+      <div class='press-conferences'>
+        {% for press_conference in site.press_conferences reversed %}
+          <div class='press-conference'>
+            <p><strong>{{ press_conference.date | date: '%B %-d, %Y' }}</strong><br/></p>
+            <a href="{{ press_conference.url }}">
+              <img src="/images/press-conferences/{{ press_conference.date | date: '%Y-%m-%d' }}.png" class='img-responsive'>
+            </a>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
